@@ -2,5 +2,5 @@
     "board": "esp8266:esp8266:nodemcuv2",
     "configuration": "CpuFrequency=80,UploadSpeed=115200,FlashSize=4M3M",
     "sketch": "seven_segment_driver.ino",
-    "port": "COM8"
+    "port": "COM3"
 }

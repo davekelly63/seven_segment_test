@@ -27,12 +27,12 @@ void setup(void)
   pinMode(C4, OUTPUT);
   pinMode(SEG_A, OUTPUT);
   pinMode(SEG_B, OUTPUT);
-  pinMode(SEG_C, OUTPUT);
+  /*pinMode(SEG_C, OUTPUT);
   pinMode(SEG_D, OUTPUT);
   pinMode(SEG_E, OUTPUT);
   pinMode(SEG_F, OUTPUT);
   pinMode(SEG_G, OUTPUT);
-  pinMode(SEG_DP, OUTPUT);
+  pinMode(SEG_DP, OUTPUT); */
 
   Serial.println("7 Segment display driver test");
 }
@@ -49,14 +49,14 @@ void DriveDisplay (uint8_t digit)
 
   digitalWrite(SEG_A, 0);
   digitalWrite(SEG_B, 0);
-  digitalWrite(SEG_C, 0);
+  /*digitalWrite(SEG_C, 0);
   digitalWrite(SEG_D, 0);
-  digitalWrite(SEG_E, 0);
-  digitalWrite(SEG_F, 0);
+  digitalWrite(SEG_E, 0); */
+  /* digitalWrite(SEG_F, 0);
   digitalWrite(SEG_G, 0);
-  digitalWrite(SEG_DP, 0);
+  digitalWrite(SEG_DP, 0); */
 
-  for (uint8_t index = 0; index < 8; index++)
+  for (uint8_t index = 0; index < 2; index++)
   {
     switch (index)
     {
